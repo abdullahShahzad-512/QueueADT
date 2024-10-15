@@ -1,2 +1,2 @@
 # QueueADT
-Queue ADT implementation provides a basic dynamic queue data structure by using array structure with automatic resizing. It can be a useful starting point for more complex queue implementations.
+Queue ADT implementation provides a basic dynamic queue data structure by using array structure with automatic resizing. It can be a useful starting point for more complex queue implementations.It is a templated class that provides a dynamic queue data structure. It allows for enqueueing and dequeueing elements of any data type, with automatic resizing to accommodate growing or shrinking queue sizes.
