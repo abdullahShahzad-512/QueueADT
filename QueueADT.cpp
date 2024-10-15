@@ -1,4 +1,7 @@
+#include <iostream>
 #include "Queue.h"
+
+using namespace std;
 
 template <typename T>
 Queue<T>::Queue(int capacity)
@@ -19,7 +22,7 @@ void Queue<T>::enqueue(T val)
 {
     if (isFull()) 
     {
-        throw std::runtime_error("Cannot enqueue to a full queue.");
+        throw runtime_error("Cannot enqueue to a full queue.");
     }
     data[rear] = val;
     rear = (rear + 1) % capacity;
@@ -33,7 +36,7 @@ T Queue<T>::deQueue()
 {
     if (isEmpty()) 
       {
-        throw std::runtime_error("Cannot dequeue from an empty queue.");
+        throw runtime_error("Cannot dequeue from an empty queue.");
       }
     noOfElement--;
     T val = data[front];
@@ -48,7 +51,7 @@ T Queue<T>::getElementAtFront()
 {
     if (isEmpty()) 
     {
-        throw std::runtime_error("Cannot access the front element of an empty queue.");
+        throw runtime_error("Cannot access the front element of an empty queue.");
     }
     return data[front];
 }
